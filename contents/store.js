@@ -19,7 +19,7 @@ export const Store = /* html */`
         */
         @media (min-width: 768px) { 
             #menuitem-store-grid { 
-                grid-template-rows: repeat(3, minmax(0, auto)); 
+                grid-template-rows: minmax(0, 4rem) minmax(0, 1rem) minmax(0, auto); 
             }
         }
 
@@ -27,9 +27,11 @@ export const Store = /* html */`
         #menuitem-store-grid ldnpk-button svg{
             fill: var(--color-yellow-500)
         }
+
     </style>
 
-        
+
+
 <!--╭──────────────────────────────────────────────────────╮
     │                  Main grid wrapper                   │░
     │              Contains all the contents               │░
@@ -49,7 +51,8 @@ export const Store = /* html */`
     │                      Top Button                      │░
     ╰░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
         <ldnpk-button shadow href="https://londonparkour.com" target="" class="
-            col-span-1 md:col-span-6">
+            col-span-2 md:col-span-6
+            ">
             <!-- Glyph Prefix -->
             <svg slot="prefix" role="img" aria-label="glyph" style="width:2rem;height:2rem">
                 <use xlink:href="#glyph-classes"></use>
@@ -57,12 +60,22 @@ export const Store = /* html */`
             VISIT STORE
         </ldnpk-button>
 
-        <div class="text-white">CATEGORIES</div>
+        <div class="
+            h-4
+            text-white 
+            hidden md:block">CATEGORIES</div>
         
-        <div class="col-span-1 
+
+
+
+<!--╭──────────────────────────────────────────────────────╮
+    │                      Categories                      │░
+    ╰░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+        <div class="
+            col-span-2      md:col-span-1 
             flex 
             flex-col 
-            h-full 
+            h-full
             gap-4">
 
 
@@ -70,44 +83,51 @@ export const Store = /* html */`
                 title="T-Shirts" 
                 subtitle="Unisex tees built for movement"
                 textposition="bottom"
-                class="h-40"
+                class="
+                h-full
+                w-1/2 md:w-full"
                 >
 
-                <picture>
-                    <img class="lazyload"
-                        src="../../../stories/images/INSIGNIA-GREY-Front-1.jpg" 
-                        alt="T-shirt category image of man wearing londonparkour tee" 
-                        width="1280" 
-                        height="1280">
-                </picture>
+
+                <img class="lazyload"
+                    src="../../../stories/images/INSIGNIA-GREY-Front-1.jpg" 
+                    alt="T-shirt category image of man wearing londonparkour tee" 
+                    width="1280" 
+                    height="1280">
+                
 
             </ldnpk-menustorecard>
 
 
             <ldnpk-menustorecard 
                 title="Sweatshirts" 
-                subtitle="Warm & Hard-wearing training gear"
+                subtitle="Hard-wearing training gear"
                 textposition="bottom"
-                class="h-40"
+                class="
+                h-full
+                w-1/2 md:w-full"
                 >
 
-                <picture>
-                    <img class="
-                        object-scale-down 
-                        object-center
-                        ls-is-cached
-                        lazyloaded
-                        "
-                        src="../../../stories/images/Sweatshirt-INSIGNIA-BLACK-Front2.jpg" 
-                        alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
-                        width="1280" 
-                        height="1280">
-                </picture>
+
+                <img class="
+                    object-scale-down 
+                    object-center
+                    ls-is-cached
+                    lazyloaded
+                    "
+                    src="../../../stories/images/Sweatshirt-INSIGNIA-BLACK-Front2.jpg" 
+                    alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
+                    width="1280" 
+                    height="1280">
+                
 
             </ldnpk-menustorecard>
         </div>
 
-        <div class="text-white col-span-5">COLLECTIONS</div>
+        <div class="text-white 
+            h-4
+            hidden md:block
+            col-span-5">COLLECTIONS</div>
 
 
     <!--╭───────────────────────────────────────────────────────╮
@@ -126,8 +146,6 @@ export const Store = /* html */`
                     height="1280">
 
         </ldnpk-menustorecard>
-
-
         
     <!--╭───────────────────────────────────────────────────────╮
         │                         SIGIL                         │
@@ -206,11 +224,35 @@ export const Store = /* html */`
     <!--╭───────────────────────────────────────────────────────╮
         │                       GIFT CARDS                      │
         ╰───────────────────────────────────────────────────────╯ -->
-        <div class="row-span-3 ">
-            <img class=""
+        
+        <div class="
+            relative
+            row-span-1 md:row-span-3
+            col-span-1
+            rounded-r-md">
+
+            <style>
+                ldnpk-button#gift-cards {
+                    --backgroundColour: var(--color-red-500);
+                    --foregroundColour: var(--color-stone-900);
+                    width: calc(100% - 1rem) 
+                }
+            </style>
+            <ldnpk-button id="gift-cards" class="
+                absolute
+                bottom-0        lg:bottom-2
+                left-0          lg:left-2
+                " href="https://londonparkour.com" size="small">GIFT CARDS</ldnpk-button>
+
+            <img class="
+                object-cover 
+                h-full
+                w-full
+                rounded-r-md"
                 src="../../../stories/images/giftcards.png" 
                 alt="t-shirt design advert for gift cards" 
                 >
+            
         </div>
         
         

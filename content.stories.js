@@ -76,8 +76,10 @@ export const Content = ({ }) => {
 		#news svg#prefixicon  		{ fill: var(--color-purple-600); }
 		#support svg#prefixicon  	{ fill: var(--color-orange-500); }
 	} 
-	</style>
 
+
+	</style>
+	
 	<ldnpk-navbar class="h-24
 
 		gap-0 md:gap-8">
