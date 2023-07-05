@@ -56,6 +56,8 @@ export const Classes = /* html */`
         <style>
             #classes-sat-adult {
                 --glyphColour:      var(--color-amber-500); 
+                --hoverColour:      var(--color-amber-50);
+                --foregroundColour: var(--color-stone-100);
             }
         </style>
 
@@ -94,7 +96,9 @@ export const Classes = /* html */`
         ╰░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
         <style>
             ldnpk-menucard#classes-sat-youth {
-                --glyphColour: var(--color-blue-500)
+                --glyphColour: var(--color-blue-500);
+                --hoverColour: var(--color-blue-50);
+                --foregroundColour: var(--color-stone-100);
             }
         </style>
         <ldnpk-menucard 
@@ -133,7 +137,9 @@ export const Classes = /* html */`
         ╰░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
         <style>
             ldnpk-menucard#classes-sun-kids {
-                --glyphColour: var(--color-green-600)
+                --glyphColour: var(--color-green-600);
+                --hoverColour: var(--color-green-50);
+                --foregroundColour: var(--color-stone-100);
             }
         </style>
         <ldnpk-menucard 
@@ -171,7 +177,9 @@ export const Classes = /* html */`
         ╰░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
         <style>
             ldnpk-menucard#classes-sat-teens {
-                --glyphColour: var(--color-purple-600)
+                --glyphColour: var(--color-purple-600);
+                --hoverColour: var(--color-purple-50);
+                --foregroundColour: var(--color-stone-100);
             }
         </style>
         <ldnpk-menucard 
@@ -210,7 +218,9 @@ export const Classes = /* html */`
         ╰░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
         <style>
             ldnpk-menucard#classes-sun-adult {
-                --glyphColour: var(--color-red-600)
+                --glyphColour: var(--color-red-600);
+                --hoverColour: var(--color-red-50);
+                --foregroundColour: var(--color-stone-100);
             }
         </style>
         <ldnpk-menucard 
@@ -249,7 +259,9 @@ export const Classes = /* html */`
         ╰░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
         <style>
             ldnpk-menucard#private-booking {
-                --glyphColour: var(--color-stone-900)
+                --glyphColour: var(--color-stone-900);
+                --hoverColour: var(--color-stone-50);
+                --foregroundColour: var(--color-stone-100);
             }
         </style>
         <ldnpk-menucard 

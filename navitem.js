@@ -73,6 +73,7 @@ html += /* html */`
             transform
             duration-500
             ease-in-out
+            overflow-hidden
             
             group-hover:-translate-y-5  md:group-hover:translate-y-5 
             group-hover:opacity-100     md:group-hover:opacity-100 

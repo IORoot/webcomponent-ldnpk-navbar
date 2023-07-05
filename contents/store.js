@@ -74,9 +74,9 @@ export const Store = /* html */`
         <div class="
             col-span-2      md:col-span-1 
             flex 
-            flex-col 
+            flex-row        md:flex-col 
             h-full
-            gap-4">
+            gap-2           md:gap-4">
 
 
             <ldnpk-menustorecard 
@@ -131,130 +131,153 @@ export const Store = /* html */`
 
 
     <!--╭───────────────────────────────────────────────────────╮
-        │                      CITY HAVOC                       │
+        │                     CARD WRAPPER                      │
         ╰───────────────────────────────────────────────────────╯ -->
-        <ldnpk-menustorecard 
-            title="City Havoc" 
-            textposition="top"
-            class="h-full"
-            >
-
-            <img class=""
-                    src="../../../stories/images/EVADE-ALT-BLACK-Front.jpg" 
-                    alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
-                    width="1280" 
-                    height="1280">
-
-        </ldnpk-menustorecard>
-        
-    <!--╭───────────────────────────────────────────────────────╮
-        │                         SIGIL                         │
-        ╰───────────────────────────────────────────────────────╯ -->
-        <ldnpk-menustorecard 
-            title="Sigil" 
-            textposition="top"
-            class="h-full"
-            >
-
-            <img class=""
-                src="../../../stories/images/SCOUT-YELLOW-Front.jpg" 
-                alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
-                width="1280" 
-                height="1280">
-
-
-        </ldnpk-menustorecard>
-
-
-    <!--╭───────────────────────────────────────────────────────╮
-        │                       PRO-MISSION                     │
-        ╰───────────────────────────────────────────────────────╯ -->
-        <ldnpk-menustorecard 
-            title="Pro-Mission" 
-            textposition="top"
-            class="h-full"
-            >
-
-            <img class="
-                "
-                src="../../../stories/images/EMBLEM-BLACK-Front.jpg" 
-                alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
-                width="1280" 
-                height="1280">
-
-        </ldnpk-menustorecard>
-
-    <!--╭───────────────────────────────────────────────────────╮
-        │                       FOUNDATION                      │
-        ╰───────────────────────────────────────────────────────╯ -->
-        <ldnpk-menustorecard 
-            title="Foundation" 
-            textposition="top"
-            class="h-full"
-            >
-
-            <img class=""
-                src="../../../stories/images/INSIGNIA-TEAL-Front.jpg" 
-                alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
-                width="1280" 
-                height="1280">
-
-        </ldnpk-menustorecard>
-        
-
-
-    <!--╭───────────────────────────────────────────────────────╮
-        │                         ELEMENTS                      │
-        ╰───────────────────────────────────────────────────────╯ -->
-        <ldnpk-menustorecard 
-            title="Elements" 
-            textposition="top"
-            class="h-full"
-            >
-
-            <img class=""
-                src="../../../stories/images/ICON-BROWN-Front.jpg" 
-                alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
-                width="1280" 
-                height="1280">
-
-        </ldnpk-menustorecard>
-        
-
-    <!--╭───────────────────────────────────────────────────────╮
-        │                       GIFT CARDS                      │
-        ╰───────────────────────────────────────────────────────╯ -->
-        
         <div class="
-            relative
-            row-span-1 md:row-span-3
-            col-span-1
-            rounded-r-md">
+            col-span-2          md:col-span-5
+            overflow-y-scroll
+            ">
 
-            <style>
-                ldnpk-button#gift-cards {
-                    --backgroundColour: var(--color-red-500);
-                    --foregroundColour: var(--color-stone-900);
-                    width: calc(100% - 1rem) 
-                }
-            </style>
-            <ldnpk-button id="gift-cards" class="
-                absolute
-                bottom-0        lg:bottom-2
-                left-0          lg:left-2
-                " href="https://londonparkour.com" size="small">GIFT CARDS</ldnpk-button>
-
-            <img class="
-                object-cover 
+            <div class="
+                w-[600px]           md:w-auto
                 h-full
-                w-full
-                rounded-r-md"
-                src="../../../stories/images/giftcards.png" 
-                alt="t-shirt design advert for gift cards" 
-                >
-            
+                
+                grid
+                grid-cols-5         
+                grid-flow-col
+                gap-2               md:gap-4">
+
+
+            <!--╭───────────────────────────────────────────────────────╮
+                │                      CITY HAVOC                       │
+                ╰───────────────────────────────────────────────────────╯ -->
+                <ldnpk-menustorecard 
+                    title="City Havoc" 
+                    textposition="top"
+                    class="h-full"
+                    >
+
+                    <img class=""
+                            src="../../../stories/images/EVADE-ALT-BLACK-Front.jpg" 
+                            alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
+                            width="1280" 
+                            height="1280">
+
+                </ldnpk-menustorecard>
+                
+            <!--╭───────────────────────────────────────────────────────╮
+                │                         SIGIL                         │
+                ╰───────────────────────────────────────────────────────╯ -->
+                <ldnpk-menustorecard 
+                    title="Sigil" 
+                    textposition="top"
+                    class="h-full"
+                    >
+
+                    <img class=""
+                        src="../../../stories/images/SCOUT-YELLOW-Front.jpg" 
+                        alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
+                        width="1280" 
+                        height="1280">
+
+
+                </ldnpk-menustorecard>
+
+
+            <!--╭───────────────────────────────────────────────────────╮
+                │                       PRO-MISSION                     │
+                ╰───────────────────────────────────────────────────────╯ -->
+                <ldnpk-menustorecard 
+                    title="Pro-Mission" 
+                    textposition="top"
+                    class="h-full"
+                    >
+
+                    <img class="
+                        "
+                        src="../../../stories/images/EMBLEM-BLACK-Front.jpg" 
+                        alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
+                        width="1280" 
+                        height="1280">
+
+                </ldnpk-menustorecard>
+
+            <!--╭───────────────────────────────────────────────────────╮
+                │                       FOUNDATION                      │
+                ╰───────────────────────────────────────────────────────╯ -->
+                <ldnpk-menustorecard 
+                    title="Foundation" 
+                    textposition="top"
+                    class="h-full"
+                    >
+
+                    <img class=""
+                        src="../../../stories/images/INSIGNIA-TEAL-Front.jpg" 
+                        alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
+                        width="1280" 
+                        height="1280">
+
+                </ldnpk-menustorecard>
+                
+
+
+            <!--╭───────────────────────────────────────────────────────╮
+                │                         ELEMENTS                      │
+                ╰───────────────────────────────────────────────────────╯ -->
+                <ldnpk-menustorecard 
+                    title="Elements" 
+                    textposition="top"
+                    class="h-full"
+                    >
+
+                    <img class=""
+                        src="../../../stories/images/ICON-BROWN-Front.jpg" 
+                        alt="Sweatshirt category image of woman wearing londonparkour sweatshirt" 
+                        width="1280" 
+                        height="1280">
+
+                </ldnpk-menustorecard>
+                
+
+            </div>
+
         </div>
-        
+
+        <!--╭───────────────────────────────────────────────────────╮
+            │                       GIFT CARDS                      │
+            ╰───────────────────────────────────────────────────────╯ -->
+            
+            <div class="
+                relative
+                row-span-1 md:row-span-3
+                col-span-1
+                rounded-r-md">
+
+                <style>
+                    ldnpk-button#gift-cards {
+                        --backgroundColour: var(--color-stone-900);
+                        --foregroundColour: var(--color-red-500);
+                    }
+                </style>
+                <ldnpk-button id="gift-cards" class="
+                    relative        md:absolute
+                    bottom-0        lg:bottom-2
+                    left-0          lg:left-2
+                    text-white
+                    w-auto
+                    " href="https://londonparkour.com" size="small">GIFT CARDS</ldnpk-button>
+
+                <img class="
+                    hidden          md:block
+                    object-cover 
+                    h-full
+                    w-full
+                    rounded-r-md"
+                    src="../../../stories/images/giftcards.png" 
+                    alt="t-shirt design advert for gift cards" 
+                    >
+                
+            </div>
         
     </div>
 

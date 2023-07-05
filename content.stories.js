@@ -6,6 +6,7 @@ import '../menuStoreCard/menustorecard.js';
 
 import { Classes } from './contents/classes.js'
 import { Store } from './contents/store.js'
+import { Tutorials } from './contents/tutorials.js'
 
 export default {
 	title: 'LondonParkour/navigation',
@@ -179,7 +180,10 @@ export const Content = ({ }) => {
 			</div>
 
 			<!-- Menu Content  -->
-			<div slot="content">Tutorials Content</div>
+			<div slot="content">
+				<!-- Import Tutorials.js -->
+				`+ Tutorials + /* html */`
+			</div>
 		</ldnpk-navitem>
 
 
